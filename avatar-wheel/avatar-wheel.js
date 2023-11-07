@@ -122,8 +122,10 @@ const checkPrivileges = (data, privileges) => {
 };
 
 const showWheel = () => {
-    $('#octagon').velocity({rotateX: '0'}, {duration: 0});
     container.className = '';
+    setTimeout(() => {
+        $('#octagon').velocity({rotateX: '0'}, {duration: 0});
+    }, 0);
 };
 
 const hideWheel = () => {
@@ -199,7 +201,7 @@ const getSpeed = () => {
     const segmentsAlreadyGone = maxSegments - segmentsToGo;
     const segmentPercentage = segmentsAlreadyGone / maxSegments;
     const easingValue =  segmentPercentage < 0.5 ? 4 * segmentPercentage * segmentPercentage * segmentPercentage : 1 - Math.pow(-2 * segmentPercentage + 2, 3) / 2;
-    return 200 + (700 * easingValue);
+    return 200 + (200 * easingValue);
 };
 
 const spinSection = () => {
@@ -229,7 +231,7 @@ const spin = () => {
     isSpinning = true;
 
     showWheel();
-    const numberOfSpins = 3;
+    const numberOfSpins = 1;
     winnerIndex = Math.round((Math.random() * 10000)) % realItems.length;
     segmentsToGo = (numberOfSpins * realItems.length) + winnerIndex;
     maxSegments = segmentsToGo;
@@ -330,17 +332,220 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/chibiSwolebae.png',
             tagline: 'Chibi with the biggest bitties'
         },
-
+        {
+            name: 'Retro Swolebae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/retroSwolebae.png',
+            tagline: 'Better than Laura'
+        },
+        {
+            name: 'Subnautica Swolebae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/subnautica.png',
+            tagline: 'Subzero Waifu'
+        },
+        {
+            name: 'Nunbae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/nunbae.png',
+            tagline: 'You definitely need Jesus'
+        },
+        {
+            name: 'Gothbae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/gothbae.png',
+            tagline: 'Ebony Dark\'ness Dementia Raven Way'
+        },
+        {
+            name: 'T-Shirt Swolekat',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/tshirtSwolekat.png',
+            tagline: 'Nipples covered and ready for action!'
+        },
+        {
+            name: 'BusinessKat 2.0',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/businessKat2.0.png',
+            tagline: 'The new era of synergy!'
+        },
+        {
+            name: 'Western Bae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/westernBae.png',
+            tagline: 'Y\'all best behave. There\'s a new sherrif in town'
+        },
+        {
+            name: 'Penny',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/penny.png',
+            tagline: 'Got any crops for me?'
+        },
+        {
+            name: 'Swoleloaf',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swoleloaf.png',
+            tagline: '15 grams of protein!'
+        },
+        {
+            name: 'Baeloaf',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/baeLoaf.png',
+            tagline: '100% pure honey bun!'
+        },
+        {
+            name: 'Gothbae Dress',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/gothDress.png',
+            tagline: 'Mistress of the Chat OwO'
+        },
+        {
+            name: 'Maika',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/maika.png',
+            tagline: 'Smile'
+        },
+        {
+            name: 'Kaho',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/kaho.png',
+            tagline: 'Sweet'
+        },
+        {
+            name: 'Mafuyu',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/mafuyu.png',
+            tagline: 'Sister'
+        },
+        {
+            name: 'Miu',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/miu.png',
+            tagline: 'Sadistic'
+        },
+        {
+            name: 'Hideri',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/hideri.png',
+            tagline: 'Surprise'
+        },
+        {
+            name: 'SwoleServer',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/waiterSwolekatA.png',
+            tagline: 'We are...'
+        },
+        {
+            name: 'SwoleServer Alt',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/waiterSwolekatB.png',
+            tagline: '... Stile!'
+        },
+        {
+            name: 'Emerald Herald',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/emeraldHerald.png',
+            tagline: 'Seek Seek Lest'
+        },
+        {
+            name: 'Swolekat 1.0 Black',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolekat1.0Black.png',
+            tagline: 'Black version of the classic'
+        },
+        {
+            name: 'Swolekat 1.0 White',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolekat1.0White.png',
+            tagline: 'White version of the classic'
+        },
+        {
+            name: 'Lady D',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/ladyD.png',
+            tagline: '7ft tall dommy mommy OwO'
+        },
+        {
+            name: 'ThiccBae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/thiccbae.png',
+            tagline: 'Gaddamn she thick'
+        },
+        {
+            name: 'GothiccBae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/gothicc.png',
+            tagline: 'Gaddamn she thick (and goth)'
+        },
+        {
+            name: 'Kyle',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/kyle.png',
+            tagline: 'Femboi swolekat from another dimension!'
+        },
+        {
+            name: 'Komaru',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/komaru.png',
+            tagline: 'That\'s one crazy bear!'
+        },
+        {
+            name: 'Christmas Swolebae 2.0',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/christmasSwolebae2.0.png',
+            tagline: 'UPGRADED PADORU'
+        },
+        {
+            name: 'Baiken',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/baiken.png',
+            tagline: 'One arm swordswoman'
+        },
+        {
+            name: 'Cowbae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/cowbae.png',
+            tagline: 'Be careful for unexpected moovements'
+        },
+        {
+            name: 'Recette',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/recette.png',
+            tagline: 'Want to buy something from my item shop?'
+        },
+        {
+            name: 'Uzaki',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/uzaki.png',
+            tagline: 'You like me, don\'t you senpai!'
+        },
+        {
+            name: 'Grungebae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/grungeBae.png',
+            tagline: 'Wake up honey! Time to mosh!'
+        },
+        {
+            name: 'Maid Loaf',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/maidloaf.png',
+            tagline: 'Da service loaf UwU'
+        },
+        {
+            name: 'Swolebae 3.0',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolebae3.0.png',
+            tagline: 'Mo bae mo booty'
+        },
+        {
+            name: 'BAEyonetta',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/bayonetta.png',
+            tagline: 'Charachter Action Waifu'
+        },
+        {
+            name: 'Gothloaf',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/gothLoaf.png',
+            tagline: 'Bred out of pure darkness'
+        },
+        {
+            name: 'Bunny Bae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/bunnyBae.png',
+            tagline: 'No sword riding though'
+        },
         {
             name: 'Astolfo',
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/astolfo.png',
             tagline: 'Cutest Femboy Ever UwU!'
         },
-
         {
-            name: 'Bae 3.0',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/bae3.0.png',
-            tagline: 'Mo bae mo booty'
+            name: 'Rosa',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/rosa.png',
+            tagline: 'Cecil\'s Waifu'
+        },
+        {
+            name: 'Dark Knight Cecil',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/darkCecil.png',
+            tagline: 'Captain of the Red Wings'
+        },
+        {
+            name: 'Paladin Cecil',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/cecilPaladin.png',
+            tagline: 'Cool Moon Guy'
+        },
+        {
+            name: 'Bloodborne Doll',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/bloodborne.png',
+            tagline: 'You can use the doll however you like'
+        },
+        {
+            name: 'Chris Swolefield',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/re5Chris.png',
+            tagline: 'Punching bolders and getting older'
         },
     ];
     if(items.length >= 8) {
