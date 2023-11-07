@@ -1,3 +1,4 @@
+const octagon = document.getElementById('octagon');
 const face0 = document.getElementById('face0');
 const face1 = document.getElementById('face1');
 const face2 = document.getElementById('face2');
@@ -87,6 +88,7 @@ const initOctagon = () => {
     face7.style = `transform: rotateX(45deg) translateY(${face7Y}px) translateZ(${face7Z}px)`;
 
     drawWheel();
+    preload();
 };
 
 const colors = ['#5E5651','#C61618','#38312C'];
@@ -123,9 +125,10 @@ const checkPrivileges = (data, privileges) => {
 
 const showWheel = () => {
     container.className = '';
-    setTimeout(() => {
-        $('#octagon').velocity({rotateX: '0'}, {duration: 0});
-    }, 0);
+    octagon.style = 'transform: rotateX(0deg)';
+    drawWheel();
+    currentItemIndex = 0;
+    currentFaceIndex = 0;
 };
 
 const hideWheel = () => {
@@ -201,7 +204,7 @@ const getSpeed = () => {
     const segmentsAlreadyGone = maxSegments - segmentsToGo;
     const segmentPercentage = segmentsAlreadyGone / maxSegments;
     const easingValue =  segmentPercentage < 0.5 ? 4 * segmentPercentage * segmentPercentage * segmentPercentage : 1 - Math.pow(-2 * segmentPercentage + 2, 3) / 2;
-    return 200 + (200 * easingValue);
+    return 100 + (400 * easingValue);
 };
 
 const spinSection = () => {
@@ -220,7 +223,10 @@ const spinSection = () => {
     currentFaceIndex = (currentFaceIndex + 1) % 8;
     const speed = getSpeed();
     segmentsToGo -=1;
-    $('#octagon').velocity({rotateX: '+=45'}, {duration: speed, easing: 'linear', complete: spinSection});
+    const currentAngle = Number.parseInt(octagon.style.transform.replace('rotateX(', '').replace('deg)', ''), 10);
+    const newAngle = currentAngle + 45;
+
+    $('#octagon').velocity({rotateX: `${newAngle}deg`}, {duration: speed, easing: 'linear', complete: spinSection});
 
 };
 
@@ -238,7 +244,7 @@ const spin = () => {
 
     setTimeout( () => {
         spinSection();
-    }, 0);
+    }, 1000);
 
 };
 
@@ -469,12 +475,12 @@ const processItems = () => {
         },
         {
             name: 'Baiken',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/baiken.png',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/baiken2.png',
             tagline: 'One arm swordswoman'
         },
         {
             name: 'Cowbae',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/cowbae.png',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/cowbae2.png',
             tagline: 'Be careful for unexpected moovements'
         },
         {
@@ -504,7 +510,7 @@ const processItems = () => {
         },
         {
             name: 'BAEyonetta',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/bayonetta.png',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/baeyonetta.png',
             tagline: 'Charachter Action Waifu'
         },
         {
@@ -529,7 +535,7 @@ const processItems = () => {
         },
         {
             name: 'Dark Knight Cecil',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/darkCecil.png',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/cecilDarkKnight.png',
             tagline: 'Captain of the Red Wings'
         },
         {
@@ -555,6 +561,14 @@ const processItems = () => {
     do {
         realItems = [...realItems, ...items];
     } while(realItems.length < 8)
+};
+
+const preload = () => {
+    const element = document.getElementById('preload');
+    realItems.forEach(i => {
+        const item = createHtml(i);
+        element.insertAdjacentHTML('beforeend', item);
+    });
 };
 
 window.addEventListener('onWidgetLoad', function (obj) {

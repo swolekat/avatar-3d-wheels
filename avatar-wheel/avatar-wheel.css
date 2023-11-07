@@ -77,3 +77,8 @@ body {
     color: #c0c0c0;
 }
 
+.preload {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
