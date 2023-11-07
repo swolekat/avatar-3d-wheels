@@ -150,45 +150,6 @@ const spinEnd = () => {
     myAudio.play();
 };
 
-// going up increase the degrees
-
-const drawWheel = () => {
-    // render previous item and that's it.
-
-
-    face0.style.background = colors[0];
-    face0Content.innerHTML = realItems[0];
-
-    face1.style.background = colors[1 % colors.length];
-    face1Content.innerHTML = realItems[1];
-
-    face2.style.background = colors[2 % colors.length];
-    face2Content.innerHTML = realItems[2];
-
-    face3.style.background = colors[3 % colors.length];
-    face3Content.innerHTML = realItems[3];
-
-    face4.style.background = colors[4 % colors.length];
-    face4Content.innerHTML = realItems[4];
-
-    face5.style.background = colors[5 % colors.length];
-    face5Content.innerHTML = realItems[5];
-
-    face6.style.background = colors[6 % colors.length];
-    face6Content.innerHTML = realItems[6];
-
-    // last face is special. Need to give it the illusion that it's the last item in the array
-    face7.style.background = colors[(realItems.length -1) % colors.length];
-    face7Content.innerHTML = realItems[(realItems.length -1)];
-
-};
-
-const getSpeed = () => {
-    const segmentsAlreadyGone = maxSegments - segmentsToGo;
-    const segmentPercentage = segmentsAlreadyGone / maxSegments;
-    const easingValue =  segmentPercentage < 0.5 ? 4 * segmentPercentage * segmentPercentage * segmentPercentage : 1 - Math.pow(-2 * segmentPercentage + 2, 3) / 2;
-    return 200 + (700 * easingValue);
-};
 
 const createHtml = ({name, image}) => {
     return `
@@ -199,6 +160,41 @@ const createHtml = ({name, image}) => {
             </div>
         </div>
     `
+};
+
+const drawWheel = () => {
+    face0.style.background = colors[0];
+    face0Content.innerHTML = createHtml(realItems[0]);
+
+    face1.style.background = colors[1 % colors.length];
+    face1Content.innerHTML = createHtml(realItems[1]);
+
+    face2.style.background = colors[2 % colors.length];
+    face2Content.innerHTML = createHtml(realItems[2]);
+
+    face3.style.background = colors[3 % colors.length];
+    face3Content.innerHTML = createHtml(realItems[3]);
+
+    face4.style.background = colors[4 % colors.length];
+    face4Content.innerHTML = createHtml(realItems[4]);
+
+    face5.style.background = colors[5 % colors.length];
+    face5Content.innerHTML = createHtml(realItems[5]);
+
+    face6.style.background = colors[6 % colors.length];
+    face6Content.innerHTML = createHtml(realItems[6]);
+
+    // last face is special. Need to give it the illusion that it's the last item in the array
+    face7.style.background = colors[(realItems.length -1) % colors.length];
+    face7Content.innerHTML = createHtml(realItems[(realItems.length -1)]);
+
+};
+
+const getSpeed = () => {
+    const segmentsAlreadyGone = maxSegments - segmentsToGo;
+    const segmentPercentage = segmentsAlreadyGone / maxSegments;
+    const easingValue =  segmentPercentage < 0.5 ? 4 * segmentPercentage * segmentPercentage * segmentPercentage : 1 - Math.pow(-2 * segmentPercentage + 2, 3) / 2;
+    return 200 + (700 * easingValue);
 };
 
 const spinSection = () => {
