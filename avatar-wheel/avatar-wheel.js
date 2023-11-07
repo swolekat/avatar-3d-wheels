@@ -151,12 +151,17 @@ const spinEnd = () => {
 };
 
 
-const createHtml = ({name, image}) => {
+const createHtml = ({name, image, tagline}) => {
     return `
         <div class="avatar-card">
             <img src="${image}"/>
-            <div>
-                ${name}
+            <div class="avatar-name-and-info">
+                 <div class="avatar-name">
+                    ${name}
+                </div>
+                <div class="avatar-tagline">
+                    ${tagline}
+                </div>
             </div>
         </div>
     `
@@ -257,15 +262,18 @@ const processItems = () => {
     const items = [
         {
             name: 'Astolfo',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/astolfo.png'
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/astolfo.png',
+            tagline: 'Cutest Femboy Ever UwU!'
         },
         {
             name: 'Asuka',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/asuka.png'
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/asuka.png',
+            tagline: 'It\'s not like I want you to pick me or anything'
         },
         {
             name: 'Bae 3.0',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/bae3.0.png'
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/bae3.0.png',
+            tagline: 'Mo bae mo booty'
         },
     ];
     if(items.length >= 8) {
