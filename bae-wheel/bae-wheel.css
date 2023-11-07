@@ -1,0 +1,84 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    perspective: none;
+}
+
+#container.hidden {
+    display: none;
+}
+
+.octagon-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.octagon {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    perspective-origin: 50% 50%;
+    transform-style:preserve-3d;
+    transform:translateX(0px) rotateX(0deg) rotateY(0deg);
+}
+
+.octagon-face {
+    position:absolute;
+    width: 100%;
+    height:50%;
+    top: 50%;
+    left: 0;
+
+}
+
+.face-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.avatar-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.avatar-card > img {
+    height: 100%;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.avatar-name-and-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar-name {
+    font-size: 72px;
+    color: #000;
+}
+
+.avatar-tagline {
+    font-size: 48px;
+    color: #333232;
+}
+
+.preload {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
