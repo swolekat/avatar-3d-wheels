@@ -261,15 +261,82 @@ window.addEventListener('onEventReceived', function (obj) {
 const processItems = () => {
     const items = [
         {
-            name: 'Astolfo',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/astolfo.png',
-            tagline: 'Cutest Femboy Ever UwU!'
+            name: 'Swolekat 1.0',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolekat1.0.png',
+            tagline: 'The OG'
+        },
+        {
+            name: 'BusinessKat',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/businessKat1.0.png',
+            tagline: 'How business was done in the old days.'
+        },
+        {
+            name: 'Swolekat 2.0',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolekat1.0.png',
+            tagline: 'Big Buff Cat Man'
+        },
+        {
+            name: 'Swolebae 1.0',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolebae1.0.png',
+            tagline: 'The original waifu'
+        },
+        {
+            name: 'Skeleton',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/skeleton.png',
+            tagline: 'Spooky and scary'
+        },
+        {
+            name: 'Christmas Swolebae 1.0',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/christmasSwolebae1.0.png',
+            tagline: 'Vintage Padoru'
+        },
+        {
+            name: 'Retro Swolekat',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/retroSwolekat.png',
+            tagline: 'Low Poly Muscle Cat'
+        },
+        {
+            name: 'Swolekid',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolekid.png',
+            tagline: 'Most kawaii kitten'
+        },
+        {
+            name: 'Swolebae 2.0',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolebae2.0.png',
+            tagline: 'Waifu perfection re-imagined'
+        },
+        {
+            name: 'Maid Swolebae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/maid.png',
+            tagline: 'Here to clean up the chat'
+        },
+        {
+            name: 'Schoolgirl Swolebae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/schoolgirl.png',
+            tagline: 'Just like in one of my animes'
         },
         {
             name: 'Asuka',
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/asuka.png',
             tagline: 'It\'s not like I want you to pick me or anything'
         },
+        {
+            name: 'Rei',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/rei.png',
+            tagline: 'Understood.'
+        },
+        {
+            name: 'Chibi Swolebae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/chibiSwolebae.png',
+            tagline: 'Chibi with the biggest bitties'
+        },
+
+        {
+            name: 'Astolfo',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/astolfo.png',
+            tagline: 'Cutest Femboy Ever UwU!'
+        },
+
         {
             name: 'Bae 3.0',
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/bae3.0.png',
