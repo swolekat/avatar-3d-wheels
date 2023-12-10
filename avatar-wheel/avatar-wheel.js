@@ -551,7 +551,12 @@ const processItems = () => {
         {
             name: 'Chris Swolefield',
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/re5Chris.png',
-            tagline: 'Punching bolders and getting older'
+            tagline: 'Punching boulders and getting older'
+        },
+        {
+            name: 'Swolekatamari',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolekatamari.png',
+            tagline: 'na na na na na na na watching swolekat stream'
         },
     ];
     if(items.length >= 8) {
