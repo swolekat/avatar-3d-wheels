@@ -463,6 +463,11 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/bloodborne.png',
             tagline: 'You can use the doll however you like'
         },
+        {
+            name: 'Satsuki',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/satsuki.png',
+            tagline: 'GAMAGOORI! I\'m H...ungry'
+        },
     ];
     if(items.length >= 8) {
         realItems = [...items];
