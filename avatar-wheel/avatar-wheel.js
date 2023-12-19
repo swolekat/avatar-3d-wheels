@@ -563,6 +563,11 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/satsuki.png',
             tagline: 'GAMAGOORI! I\'m H...ungry'
         },
+        // {
+        //     name: 'Felix Argyle',
+        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/felix.png',
+        //     tagline: 'The cutest delivery boy'
+        // },
     ];
     if(items.length >= 8) {
         realItems = [...items];
