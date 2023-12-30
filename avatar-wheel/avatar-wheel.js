@@ -280,7 +280,7 @@ const processItems = () => {
         },
         {
             name: 'Swolekat 2.0',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolekat1.0.png',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/sk2.5.png',
             tagline: 'Big Buff Cat Man'
         },
         {
@@ -555,7 +555,7 @@ const processItems = () => {
         },
         {
             name: 'Swolekatamari',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolekatamari.png',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/swolekatamari.PNG',
             tagline: 'na na na na na na na watching swolekat stream'
         },
         {
@@ -563,10 +563,15 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/satsuki.png',
             tagline: 'GAMAGOORI! I\'m H...ungry'
         },
+        {
+            name: 'Felix Argyle',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/felix.png',
+            tagline: 'The cutest delivery boy'
+        },
         // {
-        //     name: 'Felix Argyle',
-        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/felix.png',
-        //     tagline: 'The cutest delivery boy'
+        //     name: 'Pajama Swolekat',
+        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/pjswole.png',
+        //     tagline: 'Sleepy Eepy UwU'
         // },
     ];
     if(items.length >= 8) {
