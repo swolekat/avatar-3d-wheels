@@ -578,6 +578,21 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/secretary.png',
             tagline: 'Let\'s go to Atami!'
         },
+        // {
+        //     name: 'Phoenix Wright',
+        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/phoenixWright.png',
+        //     tagline: 'OBJECTION!'
+        // },
+        // {
+        //     name: 'Conductor Swolekat',
+        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/conductor.png',
+        //     tagline: 'All aboard the swole express!'
+        // },
+        // {
+        //     name: 'Mobian Swolekat',
+        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/mobian.png',
+        //     tagline: 'Gotta go fast!'
+        // },
     ];
     if(items.length >= 8) {
         realItems = [...items];
