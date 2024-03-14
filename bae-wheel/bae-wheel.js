@@ -473,6 +473,11 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/secretary.png',
             tagline: 'Let\'s go to Atami!'
         },
+        {
+            name: 'TetsuBae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/conductor.png',
+            tagline: 'Do you need another continue?'
+        },
     ];
     if(items.length >= 8) {
         realItems = [...items];
