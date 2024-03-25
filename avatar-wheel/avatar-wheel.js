@@ -588,16 +588,16 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/conductor.png',
             tagline: 'Do you need another continue?'
         },
-        // {
-        //     name: 'Phoenix Wright',
-        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/phoenixWright.png',
-        //     tagline: 'OBJECTION!'
-        // },
-        // {
-        //     name: 'Mobian Swolekat',
-        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/mobian.png',
-        //     tagline: 'Gotta go fast!'
-        // },
+        {
+            name: 'Mobian Swolekat',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/mobian.png',
+            tagline: 'Gotta go fast!'
+        },
+        {
+            name: 'Phoenix Wright',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/phoenixWright.png',
+            tagline: 'OBJECTION!'
+        },
         // {
         //     name: 'Laura',
         //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/laura.png',
