@@ -595,7 +595,7 @@ const processItems = () => {
         },
         {
             name: 'Phoenix Wright',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/phoenixWright.png',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/phoneixWright.png',
             tagline: 'OBJECTION!'
         },
         // {
