@@ -479,7 +479,7 @@ const processItems = () => {
             tagline: 'Do you need another continue?'
         },
         {
-            name: 'Laura',
+            name: 'Lara',
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/laura.png',
             tagline: 'Raidin tombs and fillin... streams with fun!'
         },
