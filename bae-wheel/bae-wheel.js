@@ -475,7 +475,7 @@ const processItems = () => {
         },
         {
             name: 'TetsuBae',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/testsuBae.png',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/tetsuBae.png',
             tagline: 'Do you need another continue?'
         },
         {
