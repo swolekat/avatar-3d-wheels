@@ -603,6 +603,11 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/laura.png',
             tagline: 'Raidin tombs and fillin... streams with fun!'
         },
+        // {
+        //     name: 'Solid Swole',
+        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/mgs.png',
+        //     tagline: 'I try to keep sneaking around but I\'m dummy thicc'
+        // },
     ];
     if(items.length >= 8) {
         realItems = [...items];
