@@ -608,11 +608,11 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/mgs.png',
             tagline: 'I try to keep sneaking around but I\'m dummy thicc'
         },
-        // {
-        //     name: 'Arina',
-        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/arinabae.png',
-        //     tagline: 'If your/'re heart isn/'t doki-doking I/'m gonna have to waku waku!'
-        // },
+        {
+            name: 'Arina',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/arinabae.png',
+            tagline: 'If your\'re heart isn\'t doki-doking I\'m gonna have to waku waku!'
+        },
     ];
     if(items.length >= 8) {
         realItems = [...items];
