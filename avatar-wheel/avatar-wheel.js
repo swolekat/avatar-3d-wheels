@@ -613,6 +613,11 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/arinabae.png',
             tagline: 'If your\'re heart isn\'t doki-doking I\'m gonna have to waku waku!'
         },
+        {
+            name: 'Mobian Swolebae',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/mobianswolebae.png',
+            tagline: 'Like rouge but a cat :3'
+        },
         // {
         //     name: 'Stealth Link',
         //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/stealthlink.png',
