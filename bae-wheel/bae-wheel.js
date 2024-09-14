@@ -88,7 +88,6 @@ const initOctagon = () => {
     face7.style = `transform: rotateX(45deg) translateY(${face7Y}px) translateZ(${face7Z}px)`;
 
     drawWheel();
-    preload();
 };
 
 const colors = ['#e75480', '#cc7483', '#C61618', '#ffc0cb'];
@@ -149,7 +148,7 @@ const spinEnd = () => {
     }
     const winningSegment = realItems[winnerIndex];
     const message = ttsMessage.replace('$NAME', winningSegment.name);
-    const url = `//api.streamelements.com/kappa/v2/speech?voice=${ttsVoice.replace('$', '')}&text=${encodeURI(message)}&key=${apiToken}`
+    const url = `https://api.streamelements.com/kappa/v2/speech?voice=${ttsVoice.replace('$', '')}&text=${encodeURI(message)}&key=${apiToken}`
     const myAudio = new Audio(url);
     myAudio.volume = volume;
     myAudio.play();
@@ -510,14 +509,13 @@ const processItems = () => {
 
 const preload = () => {
     const element = document.getElementById('preload');
-    realItems.forEach(i => {
-        const item = createHtml(i);
-        element.insertAdjacentHTML('beforeend', item);
-    });
+    const allElementsToPreload = realItems.map(i => createHtml(i)).join('\n\n');
+    element.insertAdjacentHTML('beforeend', allElementsToPreload);
 };
 
 window.addEventListener('onWidgetLoad', function (obj) {
     fieldData = obj.detail.fieldData;
     apiToken = obj.detail.channel.apiToken;
     processItems();
+    preload();
 });
