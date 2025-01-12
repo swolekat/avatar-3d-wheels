@@ -492,11 +492,16 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/mobianswolebae.png',
             tagline: 'Like rouge but a cat :3'
         },
-        // {
-        //     name: 'Gothbae Necoarc',
-        //     image: 'https://swolekat.github.io/avatar-3d-wheels/images/gothbaeNecoarc.png',
-        //     tagline: 'Burenyaaaa~~~'
-        // },
+        {
+            name: 'Gothbae Necoarc',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/gothbaeNecoarc.png',
+            tagline: 'Burenyaaaa~~~'
+        },
+        {
+            name: 'Elly Van Houten',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/elly.png',
+            tagline: 'You\'re a coward if you don\'t pick me!'
+        },
     ];
     if(items.length >= 8) {
         realItems = [...items];
