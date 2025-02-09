@@ -637,6 +637,11 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/elly.png',
             tagline: 'You\'re a coward if you don\'t pick me!'
         },
+        {
+            name: 'Webfishing',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/webfishing.png',
+            tagline: 'Doing some fishing... on the web!'
+        },
     ];
     if(items.length >= 8) {
         realItems = [...items];
