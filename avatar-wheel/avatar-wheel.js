@@ -642,6 +642,16 @@ const processItems = () => {
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/webfishing.png',
             tagline: 'Doing some fishing... on the web!'
         },
+        {
+            name: 'Maid Swolekat',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/maidSwolekat.png',
+            tagline: 'THE MOST KAWAII MAID EVER'
+        },
+        {
+            name: 'Maid Ketamine',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/maidKetamine.png',
+            tagline: 'The ACTUAL MOST KAWAII MAID EVER!'
+        },
     ];
     if(items.length >= 8) {
         realItems = [...items];
