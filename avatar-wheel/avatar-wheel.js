@@ -288,11 +288,6 @@ const processItems = () => {
             tagline: 'The original waifu'
         },
         {
-            name: 'Skeleton',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/skeleton.png',
-            tagline: 'Spooky and scary'
-        },
-        {
             name: 'Christmas Swolebae 1.0',
             image: 'https://swolekat.github.io/avatar-3d-wheels/images/christmasSwolebae1.0.png',
             tagline: 'Vintage Padoru'
@@ -649,7 +644,7 @@ const processItems = () => {
         },
         {
             name: 'Maid Ketamine',
-            image: 'https://swolekat.github.io/avatar-3d-wheels/images/maidKetamine.png',
+            image: 'https://swolekat.github.io/avatar-3d-wheels/images/maidketamine.png',
             tagline: 'The ACTUAL MOST KAWAII MAID EVER!'
         },
     ];
